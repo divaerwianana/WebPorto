@@ -1,0 +1,128 @@
+/* 1. Pengaturan Warna & Variabel Dasar */
+:root {
+    --bg-color: #fff5f7;        /* Warna latar belakang pink sangat lembut */
+    --card-bg: #ffffff;         /* Warna kotak konten (putih) */
+    --primary-color: #e87a90;   /* Warna pink utama untuk tombol & aksen */
+    --secondary-color: #f4acb7; /* Warna pink pastel untuk variasi */
+    --text-color: #4a4a4a;      /* Warna teks utama (abu-abu gelap agar nyaman dibaca) */
+    --border-color: #fde2e4;    /* Warna garis pembatas pink halus */
+}
+
+/* 2. Resetting & Pengaturan Utama Halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container utama agar tampilan di tengah dan rapi */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 3. Header / Profil Atas */
+header {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(232, 122, 144, 0.1);
+    margin-bottom: 20px;
+    border-top: 5px solid var(--primary-color);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 4. Kartu Bagian (Section Card) */
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-color);
+}
+
+/* Judul setiap Bagian */
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* 5. Item Pengalaman & Pendidikan */
+.item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.item:last-child {
+    border-bottom: none; /* Menghilangkan garis di item terakhir */
+}
+
+.item-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item-sub {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+/* 6. Tag Keterampilan (Skills Badge) */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badge {
+    background-color: #ffe6eb;
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* 7. Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #999;
+    font-size: 13px;
+}
